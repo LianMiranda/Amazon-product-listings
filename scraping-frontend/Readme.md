@@ -30,7 +30,7 @@ bun install
 3. Start the development server:
 
 ```bash
-bun run dev
+npm run dev
 ```
 
 Visit: `http://localhost:5173`
