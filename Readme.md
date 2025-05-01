@@ -92,8 +92,6 @@ bun run dev
 http://localhost:5173
 ```
 
-> Make sure the backend is running at `http://localhost:3000`.
-
 ---
 
 ## 🧠 Important Reminder
