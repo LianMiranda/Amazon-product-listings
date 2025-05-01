@@ -13,6 +13,12 @@ It consists of a Bun-powered backend that scrapes Amazon product data and a simp
 git clone https://github.com/LianMiranda/Amazon-product-listings
 ```
 
+2. Navigate to the project directory
+
+```bash
+cd Amazon-product-listings/
+```
+
 > Make sure Bun is installed on your computer
 
 > To install: [Bun](https://bun.sh/)
@@ -77,7 +83,7 @@ bun install
 3. Start the development server:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 4. Open your browser at:
