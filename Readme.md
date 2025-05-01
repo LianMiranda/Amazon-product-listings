@@ -14,6 +14,7 @@ git clone https://github.com/LianMiranda/Amazon-product-listings
 ```
 
 > Make sure Bun is installed on your computer
+
 > To install: [Bun](https://bun.sh/)
 ---
 
