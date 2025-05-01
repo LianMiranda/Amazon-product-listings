@@ -2,7 +2,7 @@ Claro! Aqui está o README atualizado com essa informação logo no início, man
 
 ---
 
-# 🕷️ Amazon Scraper
+# Amazon Scraper
 
 **Full-stack web scraping project built for a trainee job application test.**  
 It consists of a Bun-powered backend that scrapes Amazon product data and a simple frontend built with vanilla JavaScript to display the results.
