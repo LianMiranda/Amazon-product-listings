@@ -96,6 +96,34 @@ http://localhost:5173
 
 ---
 
+## 🧠 Important Reminder
+
+You need to **run both the backend and frontend at the same time** in separate terminals:
+
+- In one terminal, start the backend:
+
+```bash
+cd scraping-backend/
+bun run dev
+```
+
+- In another terminal, start the frontend:
+
+```bash
+cd scraping-frontend/
+bun run dev
+```
+
+Then open your browser at:
+
+```
+http://localhost:5173
+```
+
+> Make sure the backend is running at `http://localhost:3000`.
+
+---
+
 ## ✨ Features
 
 - Keyword-based product search
