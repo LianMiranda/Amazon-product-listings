@@ -1,15 +1,30 @@
-# scraping-backend
+## 📦 Backend (`scraping-backend`)
 
-To install dependencies:
+### ⚙️ Tech Stack
+
+- [Bun](https://bun.sh) v1.2.10
+- Node.js web scraping libraries
+
+### 🚀 Getting Started
+
+1. Navigate to the backend directory:
+
+```bash
+cd scraping-backend/
+```
+
+2. Install dependencies:
 
 ```bash
 bun install
 ```
 
-To run:
+3. Start the development server:
 
 ```bash
 bun run dev
 ```
 
-This project was created using `bun init` in bun v1.2.10. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+> The backend will be running at `http://localhost:3000`.
+
+> ⚠️ This project was initialized with `bun init`.

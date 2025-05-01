@@ -1,44 +1,32 @@
-### 📁 `frontend/README.md`
+## 🖼️ Frontend (`scraping-frontend`)
 
-```markdown
-# Amazon Scraper - Frontend
-
-A simple UI to search Amazon products by keyword. It fetches and displays product data from the backend.
-
-## Tech Stack
+### 🧰 Tech Stack
 
 - HTML, CSS, Vanilla JavaScript
-- Bootstrap 5
-- Vite
-- Bun
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Vite](https://vitejs.dev/)
+- [Bun](https://bun.sh)
 
-## How to Run (with Bun)
+### 🚀 Getting Started
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/amazon-scraper.git
-cd amazon-scraper/frontend
-```
-
-2. Install dependencies:
+1. Install dependencies:
 
 ```bash
 bun install
 ```
 
-3. Start the development server:
+2. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Visit: `http://localhost:5173`
+3. Open your browser at:
 
-> Make sure the backend is running on `http://localhost:3000`.
+```
+http://localhost:5173
+```
 
-## Features
+> Make sure the backend is running at `http://localhost:3000`.
 
-- Keyword search input
-- Displays product title, rating, number of reviews, and image
-- Clean layout using Bootstrap
+---
