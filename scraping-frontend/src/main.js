@@ -4,7 +4,7 @@ document.getElementById("search-form").addEventListener("submit", handleSearch);
 
 /**
  * Handle the search form submission
- * @param {*} e 
+ * @param {*} e
  * @returns {void}
  */
 
@@ -21,7 +21,9 @@ async function handleSearch(e) {
   resultsDiv.innerHTML = `<div class="text-center text-muted">Loading...</div>`;
 
   try {
-    const res = await fetch(`http://localhost:3000/api/scrape?keyword=${encodeURIComponent(keyword)}`);
+    const res = await fetch(
+      `http://localhost:3000/api/scrape?keyword=${encodeURIComponent(keyword)}`
+    );
     const data = await res.json();
     renderResults(data);
   } catch (err) {
@@ -31,7 +33,7 @@ async function handleSearch(e) {
 
 /**
  * Render the search results
- * @param {*} products 
+ * @param {*} products
  * @returns {void}
  */
 function renderResults(products) {
@@ -44,7 +46,6 @@ function renderResults(products) {
 
   resultsDiv.innerHTML = products.map(renderCard).join("");
 }
-
 
 /**
  * The function `renderStars` takes a rating as input and returns a string of stars and empty stars to
@@ -59,12 +60,12 @@ function renderResults(products) {
 function renderStars(rating) {
   const fullStars = Math.floor(rating);
   const emptyStars = 5 - fullStars;
-  return '★'.repeat(fullStars) + '☆'.repeat(emptyStars);
+  return "★".repeat(fullStars) + "☆".repeat(emptyStars);
 }
 
 /**
  * Render a single product card
- * @param {*} item 
+ * @param {*} item
  * @returns {string} The HTML string for the product card
  */
 function renderCard(item) {
@@ -72,22 +73,22 @@ function renderCard(item) {
 
   return `
    <div class="card mb-4 border-0 rounded-3 shadow-sm hover-shadow">
-  <div class="row g-0 align-items-center">
-    <div class="col-auto p-3 d-flex align-items-center justify-content-center">
-      <img src="${item.image}" alt="${item.title}" class="img-fluid" style="max-height: 100px;">
-    </div>
-    <div class="col">
-      <div class="card-body py-3">
-        <h5 class="card-title mb-2 text-truncate">${item.title}</h5>
-        <div class="d-flex align-items-center mb-2">
-          <span class="me-2 text-warning">${stars}</span>
-          <small class="text-muted">${item.rating}</small>
-        </div>
-        <span class="badge bg-secondary">
-          <i class="bi bi-chat-left-text-fill me-1"></i> ${item.reviews}
-        </span>
+    <div class="row g-0 align-items-center">
+      <div class="col-auto p-3 d-flex align-items-center justify-content-center">
+        <img src="${item.image}" alt="${item.title}" class="img-fluid" style="max-height: 100px; max-width: 100px;">
       </div>
-    </div>
+      <div class="col">
+        <div class="card-body py-3">
+          <h5 class="card-title mb-2 text-truncate">${item.title}</h5>
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2 text-warning">${stars}</span>
+            <small class="text-muted">${item.rating}</small>
+          </div>
+          <span class="badge bg-secondary">
+            <i class="bi bi-chat-left-text-fill me-1"></i> ${item.reviews}
+          </span>
+        </div>
+      </div>
   </div>
 </div>
 
