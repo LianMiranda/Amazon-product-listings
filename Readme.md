@@ -13,6 +13,8 @@ It consists of a Bun-powered backend that scrapes Amazon product data and a simp
 git clone https://github.com/LianMiranda/Amazon-product-listings
 ```
 
+> Make sure Bun is installed on your computer
+> To install: [Bun](https://bun.sh/)
 ---
 
 ## 📦 Backend (`scraping-backend`)
