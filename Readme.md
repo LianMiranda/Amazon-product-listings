@@ -1,7 +1,3 @@
-Claro! Aqui está o README atualizado com essa informação logo no início, mantendo a estrutura profissional e em inglês:
-
----
-
 # 🕷️ Amazon Scraper
 
 **Full-stack web scraping project built for a trainee job application test.**  
